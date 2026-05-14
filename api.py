@@ -12,10 +12,10 @@ CORS(app, resources={r"/*": {"origins": "http://localhost:8080"}})
 
 # Load your trained model artifacts
 print("Loading model artifacts...")
-model = joblib.load('ids_model.joblib')
-scaler = joblib.load('scaler.joblib')
-label_encoder = joblib.load('label_encoder.joblib')
-feature_names = joblib.load('feature_names.joblib')
+model = joblib.load('../frontend/ids_model.joblib')
+scaler = joblib.load('../frontend/scaler.joblib')
+label_encoder = joblib.load('../frontend/label_encoder.joblib')
+feature_names = joblib.load('../frontend/feature_names.joblib')
 print("Model loaded successfully!")
 
 # GENERATE A UNIQUE ID FOR THIS SESSION
